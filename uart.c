@@ -12,7 +12,7 @@ void uartInit() {
     UART->PSELRTS =  0xFFFFFFFF;
     UART->BAUDRATE = 0x00275000;
     UART->ENABLE = 4;
-    // UART->STARTRX = 1;
+    UART->STARTRX = 1;
 }
 
 void uartSend(char letter) {

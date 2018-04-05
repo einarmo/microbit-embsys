@@ -9,7 +9,7 @@ int main() {
 
     int sleep = 0;
     uartInit();
-    //while(uartRead() == '\0');
+    while(uartRead() == '\0');
     GPIO->OUTSET = (1 << 15);
     while(1) {
         if (UART->ERRORSRC & (1 << 2)) {
